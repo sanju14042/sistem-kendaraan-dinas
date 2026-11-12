@@ -1,0 +1,145 @@
+export const mockVehicles = [
+  {
+    id: "vehicle-demo-001",
+    nomorPolisi: "B 2040 SNG",
+    merek: "Toyota",
+    model: "Innova",
+    tahunProduksi: 2022,
+    warna: "Hitam",
+    kondisi: "Baik",
+    status: "Tersedia",
+  },
+  {
+    id: "vehicle-demo-002",
+    nomorPolisi: "B 1234 XYZ",
+    merek: "Mitsubishi",
+    model: "Xpander",
+    tahunProduksi: 2023,
+    warna: "Putih",
+    kondisi: "Baik",
+    status: "Dipinjam",
+  },
+  {
+    id: "vehicle-demo-003",
+    nomorPolisi: "B 5678 UVW",
+    merek: "Honda",
+    model: "CR-V",
+    tahunProduksi: 2021,
+    warna: "Abu-abu",
+    kondisi: "Baik",
+    status: "Tersedia",
+  },
+  {
+    id: "vehicle-demo-004",
+    nomorPolisi: "B 9012 RST",
+    merek: "Suzuki",
+    model: "Ertiga",
+    tahunProduksi: 2020,
+    warna: "Perak",
+    kondisi: "Baik",
+    status: "Dipinjam",
+  },
+  {
+    id: "vehicle-demo-005",
+    nomorPolisi: "B 3456 QRS",
+    merek: "Toyota",
+    model: "Avanza",
+    tahunProduksi: 2019,
+    warna: "Biru",
+    kondisi: "Perlu Perawatan",
+    status: "Tersedia",
+  },
+];
+
+export const mockEmployees = [
+  {
+    id: "employee-demo-001",
+    nama: "Agus  Saputra",
+    nip: "000000000000000001",
+    jabatan: "Kepala Subbagian Umum",
+    golongan: "III/d",
+  },
+  {
+    id: "employee-demo-002",
+    nama: "Bambang Santoso",
+    nip: "000000000000000002",
+    jabatan: "Analis Kebijakan",
+    golongan: "III/c",
+  },
+  {
+    id: "employee-demo-003",
+    nama: "Charlie Wijaya",
+    nip: "000000000000000003",
+    jabatan: "Kepala Seksi Operasional",
+    golongan: "IV/a",
+  },
+  {
+    id: "employee-demo-004",
+    nama: "Dedi Prasetyo",
+    nip: "000000000000000004",
+    jabatan: "Pengelola Barang Milik Daerah",
+    golongan: "III/b",
+  },
+  {
+    id: "employee-demo-005",
+    nama: "Eka Putra",
+    nip: "000000000000000005",
+    jabatan: "Pranata Komputer",
+    golongan: "II/d",
+  },
+];
+
+export const mockAgencies = [
+  {
+    id: "agency-demo-001",
+    nama: "Dinas Pendidikan Kota Bandung",
+    jenis: "Dinas",
+    kabupatenKota: "Kota Bandung",
+    provinsi: "Jawa Barat",
+  },
+  {
+    id: "agency-demo-002",
+    nama: "Dinas Kesehatan Kota Surabaya",
+    jenis: "Dinas",
+    kabupatenKota: "Kota Surabaya",
+    provinsi: "Jawa Timur",
+  },
+  {
+    id: "agency-demo-003",
+    nama: "Dinas Perhubungan Kota Semarang",
+    jenis: "Dinas",
+    kabupatenKota: "Kota Semarang",
+    provinsi: "Jawa Tengah",
+  },
+  {
+    id: "agency-demo-004",
+    nama: "Dinas Komunikasi dan Informatika Kota Medan",
+    jenis: "Dinas",
+    kabupatenKota: "Kota Medan",
+    provinsi: "Sumatera Utara",
+  },
+  {
+    id: "agency-demo-005",
+    nama: "Dinas Sosial Kota Denpasar",
+    jenis: "Dinas",
+    kabupatenKota: "Kota Denpasar",
+    provinsi: "Bali",
+  },
+];
+
+export const mockLoans = [
+  {
+    id: "loan-demo-001",
+    vehicleId: "vehicle-demo-002",
+    employeeId: "employee-demo-001",
+    agencyId: "agency-demo-001",
+    borrowedAt: "2026-11-12T08:00:00.000Z",
+  },
+  {
+    id: "loan-demo-002",
+    vehicleId: "vehicle-demo-004",
+    employeeId: "employee-demo-003",
+    agencyId: "agency-demo-003",
+    borrowedAt: "2026-11-12T09:00:00.000Z",
+  },
+];

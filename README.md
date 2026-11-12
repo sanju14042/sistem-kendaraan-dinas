@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Sistem Manajemen Kendaraan Dinas
 
-## Getting Started
+Aplikasi web untuk mengelola kendaraan dinas operasional, data pegawai negeri
+sipil (PNS), perangkat daerah, dan informasi peminjaman kendaraan.
 
-First, run the development server:
+## Fitur
+
+- Halaman login.
+- Dashboard super admin untuk melihat kendaraan tersedia dan dipinjam beserta
+  informasi PNS dan perangkat daerah peminjam.
+- Pencatatan peminjaman dan pengembalian kendaraan dari dashboard.
+- CRUD kendaraan, PNS, dan perangkat daerah pada halaman Kelola Data Master.
+- Lima data contoh untuk setiap entitas agar aplikasi mudah dicoba.
+- Pintasan masuk demo ke super admin yang hanya tampil dalam mode development.
+
+## Screenshot aplikasi
+
+### Dashboard super admin
+
+![Dashboard super admin](./src/lib/screenshot/Screenshot%202026-11-12%20125223.png)
+
+### Halaman kelola data master
+
+![Halaman kelola data master](./src/lib/screenshot/Screenshot%202026-11-12%20125249.png)
+
+### Daftar kendaraan
+
+![Daftar kendaraan](./src/lib/screenshot/Screenshot%202026-11-12%20125313.png)
+
+### Data pegawai negeri sipil
+
+![Data pegawai negeri sipil](./src/lib/screenshot/Screenshot%202026-11-12%20125336.png)
+
+### Data perangkat daerah
+
+![Data perangkat daerah](./src/lib/screenshot/Screenshot%202026-11-12%20125406.png)
+
+### Halaman login
+
+![Halaman login](./src/lib/screenshot/Screenshot%202026-11-12%20125918.png)
+
+## Teknologi
+
+- Next.js 16 dengan App Router
+- React 19 dan JavaScript
+- Tailwind CSS 4
+- React Hook Form dan Zod untuk formulir dan validasi
+- Lucide React untuk ikon
+
+## Menjalankan aplikasi
+
+Pastikan Node.js dan npm sudah terpasang, lalu jalankan:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Buka [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Route utama
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Route | Keterangan |
+| --- | --- |
+| `/login` | Halaman login dan pintasan demo saat development |
+| `/super-admin` | Dashboard kendaraan dan peminjaman |
+| `/super-admin/kelola-data-master` | Kelola kendaraan, PNS, dan perangkat daerah |
 
-## Learn More
+## Perintah
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run dev    # Jalankan server development
+npm run lint   # Jalankan ESLint
+npm run build  # Buat production build
+npm run start  # Jalankan production build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## AI yang digunakan
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Pengembangan aplikasi dibantu oleh **GitHub Copilot**, melalui AI assistant
+menggunakan **Copilot SDK di VS Code**. Model AI tertentu tidak ditetapkan
+dalam konfigurasi proyek ini. Aplikasi belum memiliki fitur AI yang berjalan
+di dalam produk.
 
-## Deploy on Vercel
+## Catatan
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Data kendaraan, PNS, perangkat daerah, dan peminjaman saat ini menggunakan data
+contoh serta state sementara di aplikasi. Data tidak tersimpan ke database dan
+akan hilang setelah halaman dimuat ulang.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Route super admin belum dilindungi autentikasi. Sebelum aplikasi digunakan di
+lingkungan produksi, tambahkan autentikasi dan otorisasi pada route tersebut.
